@@ -9,7 +9,9 @@
 <body>
     <script>
         'use strict';
-        
+
+        // Урок 1
+
         // Задание 1
 
         let Tc = prompt('Введите температуру по шкале Цельсия');
@@ -64,6 +66,118 @@
         // 2. NaN присваиваем в переменную result5
         // 3. с помощью console.log выводлим result5 в консоль
 
+        // Урок 2
+
+        // Задание 1
+
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2
+        // Увеличиваем переменную а с помощью инкремента на единицу. При префиксной форме значение с увеличением на единицу записывается в переменную а(2) и с(2)
+
+        let a = 1, b = 1, c, d;
+        d = b++;
+        alert(d); //ответ: 1
+        // Увеличиваем переменную b с помощью инкремента на единицу. При постфиксной форме значение записывается в переменную b(2) и d(2)
+
+        let a = 1, b = 1, c, d;
+        c = 2 + ++a;
+        alert(c); //ответ: 4
+
+        // Увеличиваем переменную a с помощью инкремента на единицу. При префиксной форме значение записывается в переменную a(2) и c(2+2=4)
+
+        let a = 1, b = 1, c, d;
+        d = 2 + b++;
+        alert(d); //ответ: 3
+        alert(a); //1
+        alert(b); //2
+
+        // Увеличиваем переменную b с помощью инкремента на единицу. При постфиксной форме значение записывается в переменную d(3) и a(1), b(2)
+
+        // Задание 2
+
+        let a = 2;
+        let x = 1 + (a *= 2); 
+        alert(a); //4
+        alert(x); //5
+
+        // 1. сначала выполняется вычисление в скобках, вычисляем переменную а с помощью оператора умножение с присвоением (аналог записи а* = 2 / а = а*2)
+        // 2. вычисляем переменную х
+        // 3. выводим ответ а = 4, x = 5
+
+        // Задание 3
+
+        let = a ;
+        let = b ;
+
+        function compare_num(a,b) {
+            if (a && b >= 0)
+            alert (a - b);
+            else if (a && b < 0)
+            alert (a * b);
+        }
+
+        compare_num(4,6)
+
+        // Задание 4
+
+        function return_sum (a,b) {
+            return a + b;
+        }
+
+        function return_sub (a,b) {
+            return a - b; 
+        }
+
+        function return_div (a,b) {
+            return a / b; 
+        }
+
+        function return_mul (a,b) {
+            return a * b; 
+        }
+
+        // Задание 5
+
+        function return_sum (a,b) {
+            return a + b;
+        }
+
+        function return_sub (a,b) {
+            return a - b; 
+        }
+
+        function return_div (a,b) {
+            return a / b; 
+        }
+
+        function return_mul (a,b) {
+            return a * b; 
+        }
+
+        function mathOperation (arg1, arg2, operation) {
+            switch (operation) {
+                case "+":
+                    return return_sum(arg1, arg2);
+
+                case "-":
+                    return return_sub(arg1, arg2);
+
+                case "/":
+                    return return_div(arg1, arg2);
+
+                case "*":
+                    return return_mul(arg1, arg2);
+                default:
+                    throw new Error('Операция' + operation + 'не предусмотрена');
+            }
+        }
+
+        console.log(mathOperation(3,5,'+'));
+        console.log(mathOperation(3,5,'-'));
+        console.log(mathOperation(3,5,'/'));
+        console.log(mathOperation(3,5,'*'));
+        console.log(mathOperation(3,5,'lorem'));
 
     </script> 
 </body>
