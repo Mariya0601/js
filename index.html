@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        
+        // Задание 1
+
+        let Tc = prompt('Введите температуру по шкале Цельсия');
+        let Tf = (9 / 5) * Tc + 32;
+        alert('Температура по шкале Фаренгейта:'+ Tf);
+
+        // Задание 2
+
+        let name = "Василий";
+        let admin = name;
+        console.log(admin);
+
+        // Задание 3
+
+        let result1 = 10 + 10 + "10";
+        console.log(result1)
+
+        // 1. 10 число прибавляем 10 число получаем 20 число
+        // 2. 20 число прибавляем 10 строка получаем строку 2010
+        // 3. 2010 присваиваем в переменную result1
+        // 4. с помощью console.log выводим result1 в консоль
+
+
+        let result2 = 10 + "10" + 10;
+        console.log(result2)
+        // 1. 10 число прибавляем 10 строка получаем 1010 строка
+        // 2. 1010 строка прибаляем число 10 получаем 101010 строку
+        // 3. 101010 присваиваем в переменную result2
+        // 4. с помощью console.log выводим result2 в консоль
+
+
+
+        let result3 = 10 + 10 + +"10";
+        console.log(result3)
+        // 1. 10 число прибавляем 10 число получаем 20 число
+        // 2. 20 число прибавляем 10 число (унарный плюс из 10 строка сделал 10 число) получаем 30 число
+        // 3. 30 присваиваем в переменную result3
+        // 4. с помощью console.log выводим result3 в консоль
+
+
+        let result4 = 10 / -"";
+        console.log(result4)
+        // 1. 10 число делим на -0 ( унарный минус из строки сделал -0) получаем -бесконечность
+        // 2.  -Infinity присваиваем в переменную result4
+        // 3. с помощью console.log выводим result4 в консоль
+
+
+        let result5 = 10 / +"2,5";
+        console.log(result5)
+
+        // 1. 10 делим на NaN ( запятая не правильный символ, делает из числа NaN) получаем NaN
+        // 2. NaN присваиваем в переменную result5
+        // 3. с помощью console.log выводлим result5 в консоль
+
+
+    </script> 
+</body>
+</html>
+
